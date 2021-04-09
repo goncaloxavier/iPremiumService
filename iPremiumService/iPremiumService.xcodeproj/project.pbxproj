@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E44EEA82620A07D008CF927 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44EEA72620A07D008CF927 /* Login.swift */; };
+		4E44EEBB2620AEA2008CF927 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44EEBA2620AEA2008CF927 /* Test.swift */; };
+		4EB4C8332620754700E17F9B /* Tecnico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4C8322620754700E17F9B /* Tecnico.swift */; };
 		4EEC17C226206E0A0046C0B8 /* iPremiumServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC17C126206E0A0046C0B8 /* iPremiumServiceApp.swift */; };
 		4EEC17C426206E0A0046C0B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC17C326206E0A0046C0B8 /* ContentView.swift */; };
 		4EEC17C626206E0F0046C0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EEC17C526206E0F0046C0B8 /* Assets.xcassets */; };
@@ -33,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E44EEA72620A07D008CF927 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		4E44EEBA2620AEA2008CF927 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		4EB4C8322620754700E17F9B /* Tecnico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tecnico.swift; sourceTree = "<group>"; };
 		4EEC17BE26206E090046C0B8 /* iPremiumService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPremiumService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEC17C126206E0A0046C0B8 /* iPremiumServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPremiumServiceApp.swift; sourceTree = "<group>"; };
 		4EEC17C326206E0A0046C0B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E44EEA62620A06C008CF927 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E44EEA72620A07D008CF927 /* Login.swift */,
+				4E44EEBA2620AEA2008CF927 /* Test.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EB4C8262620731400E17F9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EB4C8322620754700E17F9B /* Tecnico.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4EEC17B526206E090046C0B8 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +119,8 @@
 		4EEC17C026206E090046C0B8 /* iPremiumService */ = {
 			isa = PBXGroup;
 			children = (
+				4E44EEA62620A06C008CF927 /* View */,
+				4EB4C8262620731400E17F9B /* Model */,
 				4EEC17C126206E0A0046C0B8 /* iPremiumServiceApp.swift */,
 				4EEC17C326206E0A0046C0B8 /* ContentView.swift */,
 				4EEC17C526206E0F0046C0B8 /* Assets.xcassets */,
@@ -263,6 +288,9 @@
 			files = (
 				4EEC17C426206E0A0046C0B8 /* ContentView.swift in Sources */,
 				4EEC17C226206E0A0046C0B8 /* iPremiumServiceApp.swift in Sources */,
+				4E44EEBB2620AEA2008CF927 /* Test.swift in Sources */,
+				4EB4C8332620754700E17F9B /* Tecnico.swift in Sources */,
+				4E44EEA82620A07D008CF927 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
