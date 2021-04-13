@@ -12,13 +12,15 @@ struct ContentView: View {
     
     var body: some View {
         if !login {
-            Login(login: $login)
-                .frame(minWidth: 200, maxWidth: 300, minHeight: 150, maxHeight: 200)
+            LoginView(login: $login)
+                .animation(.interactiveSpring())
+                .frame(minWidth: 350, maxWidth: 350, minHeight: 250, maxHeight: 250)
                 .padding()
         }else{
-            Test()
-                .frame(minWidth: 200, maxWidth: 300, minHeight: 150, maxHeight: 200)
-                .padding()
+           NavigationView {
+                Sidebar(login: $login)
+           }
+           .frame(width:600, height: 350)
         }
     }
 }

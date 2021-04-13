@@ -7,7 +7,23 @@
 
 import SwiftUI
 
-struct Login: View {
+extension TextField {
+    func formStyle() -> some View {
+        self
+            .frame(minWidth: 150, maxWidth: 200)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+    }
+}
+
+extension SecureField {
+    func formStyle() -> some View {
+        self
+            .frame(minWidth: 150, maxWidth: 200)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+    }
+}
+
+struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var errorMessage: String = ""
@@ -27,29 +43,32 @@ struct Login: View {
                     .bold()
                 TextField(
                     "Username",
-                     text: $username
+                    text: $username
                 )
-                .frame(minWidth: 150, maxWidth: 300)
+                .formStyle()
                 
                 Text("Password")
                     .bold()
                 SecureField(
                     "Password",
-                     text: $password
+                    text: $password
                 )
-                .frame(minWidth: 150, maxWidth: 300)
+                .formStyle()
                 
-                Button("Sign In") {
-                    errorMessage = tecnico.inputValidation(username: username, password: password)
-                    
-                    if errorMessage.isEmpty {
-                        self.login = true
-                    }
-                }
+                Button("Sign In", action: loginAction)
                 
                 Text(errorMessage)
+                    .padding()
                     .foregroundColor(.red)
             }
+        }
+    }
+    
+    func loginAction() {
+        errorMessage = tecnico.inputValidation(username: username, password: password)
+        
+        if errorMessage.isEmpty {
+            self.login = true
         }
     }
 }

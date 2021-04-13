@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E44EEA82620A07D008CF927 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44EEA72620A07D008CF927 /* Login.swift */; };
-		4E44EEBB2620AEA2008CF927 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44EEBA2620AEA2008CF927 /* Test.swift */; };
+		4E18694826246C0B0052B189 /* SidebarProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E18694726246C0B0052B189 /* SidebarProfile.swift */; };
+		4E423D7E26246281003416C3 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E423D7D26246281003416C3 /* Test.swift */; };
+		4E423D84262464D9003416C3 /* SidebarRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E423D83262464D9003416C3 /* SidebarRow.swift */; };
+		4E44EEA82620A07D008CF927 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44EEA72620A07D008CF927 /* LoginView.swift */; };
+		4E44EEBB2620AEA2008CF927 /* ClienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44EEBA2620AEA2008CF927 /* ClienteView.swift */; };
 		4EB4C8332620754700E17F9B /* Tecnico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4C8322620754700E17F9B /* Tecnico.swift */; };
+		4EB6186A2624A1DD00AA5C46 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB618692624A1DC00AA5C46 /* Cliente.swift */; };
+		4EB6EEB22624569D0087FBA1 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB6EEB12624569D0087FBA1 /* Sidebar.swift */; };
 		4EEC17C226206E0A0046C0B8 /* iPremiumServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC17C126206E0A0046C0B8 /* iPremiumServiceApp.swift */; };
 		4EEC17C426206E0A0046C0B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC17C326206E0A0046C0B8 /* ContentView.swift */; };
 		4EEC17C626206E0F0046C0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EEC17C526206E0F0046C0B8 /* Assets.xcassets */; };
@@ -36,9 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4E44EEA72620A07D008CF927 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		4E44EEBA2620AEA2008CF927 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		4E18694726246C0B0052B189 /* SidebarProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarProfile.swift; sourceTree = "<group>"; };
+		4E423D7D26246281003416C3 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		4E423D83262464D9003416C3 /* SidebarRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarRow.swift; sourceTree = "<group>"; };
+		4E44EEA72620A07D008CF927 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4E44EEBA2620AEA2008CF927 /* ClienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteView.swift; sourceTree = "<group>"; };
 		4EB4C8322620754700E17F9B /* Tecnico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tecnico.swift; sourceTree = "<group>"; };
+		4EB618692624A1DC00AA5C46 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
+		4EB6EEB12624569D0087FBA1 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		4EEC17BE26206E090046C0B8 /* iPremiumService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPremiumService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEC17C126206E0A0046C0B8 /* iPremiumServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPremiumServiceApp.swift; sourceTree = "<group>"; };
 		4EEC17C326206E0A0046C0B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,11 +89,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E18694C26246D440052B189 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4E44EEA72620A07D008CF927 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4E18694D26246D4D0052B189 /* Cliente */ = {
+			isa = PBXGroup;
+			children = (
+				4E44EEBA2620AEA2008CF927 /* ClienteView.swift */,
+			);
+			path = Cliente;
+			sourceTree = "<group>";
+		};
+		4E423D82262464C1003416C3 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				4EB6EEB12624569D0087FBA1 /* Sidebar.swift */,
+				4E423D83262464D9003416C3 /* SidebarRow.swift */,
+				4E18694726246C0B0052B189 /* SidebarProfile.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
 		4E44EEA62620A06C008CF927 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4E44EEA72620A07D008CF927 /* Login.swift */,
-				4E44EEBA2620AEA2008CF927 /* Test.swift */,
+				4E18694D26246D4D0052B189 /* Cliente */,
+				4E18694C26246D440052B189 /* Login */,
+				4E423D82262464C1003416C3 /* Sidebar */,
+				4E423D7D26246281003416C3 /* Test.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB4C8322620754700E17F9B /* Tecnico.swift */,
+				4EB618692624A1DC00AA5C46 /* Cliente.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,9 +327,14 @@
 			files = (
 				4EEC17C426206E0A0046C0B8 /* ContentView.swift in Sources */,
 				4EEC17C226206E0A0046C0B8 /* iPremiumServiceApp.swift in Sources */,
-				4E44EEBB2620AEA2008CF927 /* Test.swift in Sources */,
+				4E44EEBB2620AEA2008CF927 /* ClienteView.swift in Sources */,
+				4E423D7E26246281003416C3 /* Test.swift in Sources */,
+				4EB6186A2624A1DD00AA5C46 /* Cliente.swift in Sources */,
 				4EB4C8332620754700E17F9B /* Tecnico.swift in Sources */,
-				4E44EEA82620A07D008CF927 /* Login.swift in Sources */,
+				4E423D84262464D9003416C3 /* SidebarRow.swift in Sources */,
+				4EB6EEB22624569D0087FBA1 /* Sidebar.swift in Sources */,
+				4E18694826246C0B0052B189 /* SidebarProfile.swift in Sources */,
+				4E44EEA82620A07D008CF927 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
