@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavigationView: View {
+struct ContainerView: View {
     @Binding var login: Bool
     @Binding var editCliente: Bool
     

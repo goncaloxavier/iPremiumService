@@ -15,15 +15,8 @@ struct SidebarRow: View {
         HStack {
             Image
                 .init(systemName: sectionImage)
-                .foregroundColor(.blue)
             Text(section)
-                .font(.title)
+                .font(.body)
         }
-    }
-}
-
-struct SidebarRow_Previews: PreviewProvider {
-    static var previews: some View {
-        SidebarRow()
     }
 }

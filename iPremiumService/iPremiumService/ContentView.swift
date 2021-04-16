@@ -9,18 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var login = false
+    @State private var editCliente = false
     
     var body: some View {
-        if !login {
+        if !login && !editCliente {
             LoginView(login: $login)
-                .animation(.interactiveSpring())
+                .animation(.default)
                 .frame(minWidth: 350, maxWidth: 350, minHeight: 250, maxHeight: 250)
                 .padding()
-        }else{
-           NavigationView {
-                Sidebar(login: $login)
-           }
-           .frame(width:600, height: 350)
+                .background(Color.white)
+        }else if login{
+            ContainerView(login: $login, editCliente: $editCliente)
+        } else if editCliente {
+            ClienteView(login: $login, editCliente: $editCliente)
+                .fixedSize()
         }
     }
 }

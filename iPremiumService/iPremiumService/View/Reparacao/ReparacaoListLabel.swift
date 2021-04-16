@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-struct ReparacaoListLabels: View {
+struct ReparacaoListLabel: View {
+    var label: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct ReparacaoListLabels_Previews: PreviewProvider {
-    static var previews: some View {
-        ReparacaoListLabels()
+        Text(label)
+        Divider()
+            .background(Color.green)
+            .opacity(0.5)
     }
 }

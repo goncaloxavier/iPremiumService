@@ -9,19 +9,15 @@ import SwiftUI
 
 struct Sidebar: View {
     @Binding var login: Bool
-    @State private var selection: Int? = 0 // optional !!
+    @Binding var editCliente: Bool
+    
     var body: some View {
         List {
             SidebarProfile(login: $login)
-            NavigationLink(destination: ClienteView().animation(.interactiveSpring()), tag: 0, selection: $selection) {
-                SidebarRow(section: "Cliente", sectionImage: "person.crop.circle")
-            }
-            NavigationLink(destination: Test()) {
-                SidebarRow(section: "Test", sectionImage: "gearshape")
-            }
+            SidebarClienteGroup(login: $login, editCliente: $editCliente)
+            SidebarRepGroup(editCliente: $editCliente, login: $login)
+            SidebarEncGroup(editCliente: $editCliente, login: $login)
         }
-        .animation(.interactiveSpring())
         .listStyle(SidebarListStyle())
-        .frame(width: 200)
     }
 }

@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct SidebarEncGroup: View {
+    
+    @Binding var editCliente: Bool
+    @Binding var login: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        Spacer()
+        
+        VStack(alignment: .leading){
+            Text("Emcomenda")
+                .font(.headline)
+            Divider()
+        }
 
-struct SidebarEncGroup_Previews: PreviewProvider {
-    static var previews: some View {
-        SidebarEncGroup()
+        NavigationLink(destination: ReparacaoView(editCliente: $editCliente, login: $login)) {
+            SidebarRow(section: "Criar/Editar Encomenda", sectionImage: "cube.box")
+        }
+        NavigationLink(destination: ReparacaoView(editCliente: $editCliente, login: $login)) {
+            SidebarRow(section: "Lista Encomendas", sectionImage: "list.bullet")
+        }
     }
 }

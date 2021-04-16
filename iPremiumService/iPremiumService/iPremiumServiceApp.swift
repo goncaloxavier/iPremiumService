@@ -14,6 +14,8 @@ struct iPremiumServiceApp: App {
             ContentView()
         } .commands {
             SidebarCommands()
+            TextFormattingCommands()
+            TextEditingCommands()
         }
     }
 }

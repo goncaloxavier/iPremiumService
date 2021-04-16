@@ -10,15 +10,22 @@ import SwiftUI
 extension TextField {
     func formStyle() -> some View {
         self
-            .frame(minWidth: 150, maxWidth: 200)
+            .frame(minWidth: 190, maxWidth: 220)
             .textFieldStyle(RoundedBorderTextFieldStyle())
+    }
+}
+
+extension Text {
+    func formStyle() -> some View {
+        self
+            
     }
 }
 
 extension SecureField {
     func formStyle() -> some View {
         self
-            .frame(minWidth: 150, maxWidth: 200)
+            .frame(minWidth: 150, maxWidth: 220)
             .textFieldStyle(RoundedBorderTextFieldStyle())
     }
 }
@@ -33,14 +40,14 @@ struct LoginView: View {
     var body: some View {
         
         VStack(alignment: .center){
-            Text("iPremium Service")
+            Text("Authentication")
                 .font(.title)
             
             Spacer()
             
             VStack(alignment: .leading){
                 Text("Username")
-                    .bold()
+                    .formStyle()
                 TextField(
                     "Username",
                     text: $username
@@ -48,7 +55,7 @@ struct LoginView: View {
                 .formStyle()
                 
                 Text("Password")
-                    .bold()
+                    .formStyle()
                 SecureField(
                     "Password",
                     text: $password
@@ -56,11 +63,11 @@ struct LoginView: View {
                 .formStyle()
                 
                 Button("Sign In", action: loginAction)
-                
-                Text(errorMessage)
-                    .padding()
-                    .foregroundColor(.red)
             }
+            
+            Text(errorMessage)
+                .padding()
+                .foregroundColor(.red)
         }
     }
     

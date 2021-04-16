@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ReparacaoListRow: View {
+    var description: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(description)
+        Divider()
+            .background(Color.green)
+            .opacity(0.5)
     }
 }
 

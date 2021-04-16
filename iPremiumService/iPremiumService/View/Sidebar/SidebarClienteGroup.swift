@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct SidebarClienteGroup: View {
+    @Binding var login: Bool
+    @Binding var editCliente: Bool
+    @State private var selection: Int? = 0 // optional !!
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct SidebarClienteGroup_Previews: PreviewProvider {
-    static var previews: some View {
-        SidebarClienteGroup()
+        Spacer()
+        
+        VStack(alignment: .leading) {
+            Text("Cliente")
+                .font(.headline)
+            Divider()
+        }
+        
+        NavigationLink(destination: ClienteView(login: $login, editCliente: $editCliente), tag: 0, selection: $selection) {
+            SidebarRow(section: "Criar/Editar Reparação", sectionImage: "person.crop.circle")
+        }
+        NavigationLink(destination: ClienteView(login: $login, editCliente: $editCliente)) {
+            SidebarRow(section: "Lista Clientes", sectionImage: "list.bullet")
+        }
     }
 }
